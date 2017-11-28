@@ -1,0 +1,14 @@
+{% extends "base_index.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Usuario Nuevo{% endblock %}
+
+
+{% block page_content %}
+
+<h3>Bienvenido!</h3>
+<p>Para obtener un usuario debe completar el siguienteformulario.</p>
+<div class="page-header" style="align:center;width:200px;height:50px">
+    {{ wtf.quick_form(formulario) }}
+</div>
+{% endblock %}
